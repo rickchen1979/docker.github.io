@@ -213,7 +213,7 @@ Then use `ping` to send three ICMP requests and test the connectivity of the
 containers on this `bridge` network.
 
 ```
-root@0cb243cd1293:/# ping -w3 172.17.0.3
+root@0cb243cd1293:/# ping -c 3 172.17.0.3
 
 PING 172.17.0.3 (172.17.0.3): 56 data bytes
 64 bytes from 172.17.0.3: seq=0 ttl=64 time=0.096 ms
@@ -262,7 +262,7 @@ lo        Link encap:Local Loopback
           collisions:0 txqueuelen:0
           RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
 
-root@0cb243cd1293:/# ping -w3 172.17.0.2
+root@0cb243cd1293:/# ping -c 3 172.17.0.2
 
 PING 172.17.0.2 (172.17.0.2): 56 data bytes
 64 bytes from 172.17.0.2: seq=0 ttl=64 time=0.067 ms
