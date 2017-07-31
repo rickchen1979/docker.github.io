@@ -21,7 +21,7 @@ Use a command like the following to start the registry container:
 ```bash
 $ docker run -d -p 5000:5000 --restart=always --name registry registry:2
 ```
-
+### registry:2
 The registry is now ready to use.
 
 > **Warning**: These first few examples show registry configurations that are
